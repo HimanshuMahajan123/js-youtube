@@ -5,7 +5,7 @@ tinderUser.id = "123abc"
 tinderUser.name = "Sammy"
 tinderUser.isLoggedIn = false
 
-// console.log(tinderUser);
+// console.log(tinderUser.id);
 
 const regularUser = {
     email: "some@gmail.com",
@@ -16,6 +16,8 @@ const regularUser = {
         }
     }
 }
+
+//console.log(regularUser["email"]); //agar square brackets se console karna hai to key ko string ki trh pass krna hoga
 
 // console.log(regularUser.fullname.userfullname.firstname);
 
@@ -53,3 +55,21 @@ users[1].email
 // console.log(Object.entries(tinderUser));
 
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+
+//***********************************************************************************
+
+//DE STRUCTURE AN OBJECT
+
+const course = {
+    coursename : "js in hindi",
+    price : "999",
+    courseInstructor : "hitesh"
+}
+
+// const {courseInstructor} = course
+// console.log(courseInstructor);
+
+const {courseInstructor : Instructor} = course
+console.log(Instructor);
+
